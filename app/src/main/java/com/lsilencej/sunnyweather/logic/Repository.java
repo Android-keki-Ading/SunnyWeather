@@ -17,6 +17,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/** 单例模式
+ * @package: com.lsilencej.sunnyweather.logic
+ * @className: Repository
+ * @author: Ading
+ * @time: 2022-05-02 20:22
+ */
 public class Repository {
 
     public static LiveData<PlaceResponse> searchPlaces(final String query) {
@@ -25,6 +31,9 @@ public class Repository {
             @Override
             public void run() {
                 try {
+                    /** 使用PlaceResponse对象接受网络响应结果反序列化的对象
+                     * @date: 2022-05-02 20:28
+                     */
                     PlaceResponse placeResponse = SunnyWeatherNetwork.searchPlace(query);
                     placeResponseMutableLiveData.postValue(placeResponse);
                 } catch (IOException e) {

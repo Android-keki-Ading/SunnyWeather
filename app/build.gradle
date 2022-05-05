@@ -17,10 +17,10 @@ android {
 
     signingConfigs {
         config {
-            storeFile file(KEY_PATH)
-            storePassword KEY_PASS
-            keyAlias ALIAS_NAME
-            keyPassword ALIAS_PASS
+//            storeFile file(KEY_PATH)
+//            storePassword KEY_PASS
+//            keyAlias ALIAS_NAME
+//            keyPassword ALIAS_PASS
         }
     }
 

@@ -17,6 +17,11 @@ import com.lsilencej.sunnyweather.ui.weather.WeatherActivity;
 
 import java.util.List;
 
+/** 继承Recycler.Adapter, 指定泛型<PlaceAdapter.ViewHolder>
+ * @package: com.lsilencej.sunnyweather.ui.place
+ * @className: PlaceAdapter
+ * @time: 2022-05-05 17:44
+ */
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> {
 
     private PlaceFragment placeFragment;

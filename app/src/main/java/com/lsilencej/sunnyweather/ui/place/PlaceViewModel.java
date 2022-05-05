@@ -18,6 +18,7 @@ public class PlaceViewModel extends ViewModel {
     private MutableLiveData<String> searchLiveData = new MutableLiveData<String>();
     private List<Place> placeList = new ArrayList<>();
 
+
     private LiveData<PlaceResponse> placeLiveData = Transformations.switchMap(searchLiveData, new Function<String, LiveData<PlaceResponse>>() {
         @Override
         public LiveData<PlaceResponse> apply(String input) {

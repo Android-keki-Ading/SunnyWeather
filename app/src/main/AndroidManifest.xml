@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+<!--    指定SunnyWeatherApplication-->
     <application
         android:name=".SunnyWeatherApplication"
         android:allowBackup="true"
